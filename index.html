@@ -12,15 +12,40 @@
       background-color: #fdfbf9;
       color: #111;
     }
+
     .hero {
       background-color: #111;
       color: #fff;
       padding: 40px 20px;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
+
+    .hero > * + * {
+      margin-top: 24px;
+    }
+
     .hero img {
-      max-width: 280px;
+      max-width: 240px;
     }
+
+    .slogan {
+      font-size: 36px;
+      font-weight: 800;
+      color: #FFD700;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 18px;
+      font-weight: 400;
+      color: #fff;
+      margin: 0;
+    }
+
     .cta-btn {
       background-color: #f44316;
       color: white;
@@ -29,39 +54,48 @@
       font-weight: 600;
       border: none;
       border-radius: 6px;
-      margin-top: 20px;
       cursor: pointer;
+      margin: 0;
     }
+
     section {
       padding: 40px 20px;
       max-width: 900px;
       margin: auto;
     }
+
     h2 {
       color: #111;
     }
+
     .grid {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
     }
+
     .column {
       flex: 1;
       min-width: 260px;
     }
+
     .step, .benefit {
       display: flex;
       align-items: flex-start;
       margin-bottom: 16px;
     }
-    .step-icon, .benefit-icon {
+
+    .step-icon {
       font-weight: bold;
       color: #f44316;
       margin-right: 10px;
     }
+
     .benefit-icon {
       color: green;
+      margin-right: 10px;
     }
+
     .highlight {
       background-color: #fff7f2;
       padding: 20px;
@@ -69,9 +103,11 @@
       text-align: center;
       margin-top: 40px;
     }
+
     .highlight h3 {
       color: #f44316;
     }
+
     footer {
       background-color: #111;
       color: #fff;
@@ -79,6 +115,7 @@
       text-align: center;
       font-size: 14px;
     }
+
     footer a {
       color: #fff;
       margin: 0 8px;
@@ -87,12 +124,15 @@
   </style>
 </head>
 <body>
+
   <div class="hero">
     <img src="logo-hora-do-bonus.png" alt="Hora do Bônus">
-    <p class="slogan">Piscou, perdeu.</p>
-    <h1>Os bônus mais quentes do dia, direto no seu Telegram</h1>
+    <h1 class="slogan">Piscou, perdeu!</h1>
+    <p>Os bônus mais quentes do dia, direto no seu Telegram</p>
     <p>Seu alerta de bônus em tempo real. Pegue antes que expire!</p>
-    <a href="https://t.me/plataformadehoje" target="_blank"><button class="cta-btn">Entrar no Canal do Telegram</button></a>
+    <a href="https://t.me/plataformadehoje" target="_blank">
+      <button class="cta-btn">Entrar no Canal do Telegram</button>
+    </a>
   </div>
 
   <section>
@@ -132,5 +172,7 @@
       📩 contato@horadobonus.com
     </p>
   </footer>
+
 </body>
 </html>
+
